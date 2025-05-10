@@ -7,23 +7,58 @@
 	<title>Faisal & Annisa</title>
 </head>
 <body>
-	<section class="bg-[url(https://hi.momenkita.id/wp-content/uploads/2023/10/bg3-MK-Faza-Dimas.jpg)] bg-cover bg-no-repeat bg-center fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-between items-center text-center py-20">
-		<div>
+	<section id="landing-section" class="hidden bg-[url(https://hi.momenkita.id/wp-content/uploads/2023/10/bg3-MK-Faza-Dimas.jpg)] bg-cover bg-no-repeat bg-center fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-between items-center text-center py-25">
+		<div class="z-100">
 			<p>The Wedding Of</p>
 			<h1 class="font-cursive text-4xl">Faisal & Annisa</h1>
 			<p>Minggu, 22 Juni 2025</p>
 		</div>
-		<div>
+		<div class="z-100">
 			<p>Kepada Yth.</p>
 			<p class="font-serif text-xl mb-2">Dani dan Partner</p>
-			<a class="bg-black text-white py-2 px-4 rounded" href="/">Buka Undangan</a>
+			<button type="button" id="open-button" class="bg-black text-white py-2 px-4 rounded cursor-pointer">Buka Undangan</button>
 		</div>
-		<img class="absolute w-40 bottom-0 left-0 z-10" src="https://hi.momenkita.id/wp-content/uploads/2023/10/FLOWER-2-MK-Faza-Dimas.png" alt="">
-		<img class="absolute w-30 bottom-0 left-0" src="https://hi.momenkita.id/wp-content/uploads/2023/10/FLOWER-6-MK-Faza-Dimas.png" alt="">
-		
-		<img class="absolute w-30 right-0 top-40 z-10" src="https://hi.momenkita.id/wp-content/uploads/2023/10/FLOWER-7-MK-Faza-Dimas.png" alt="">
-		<img class="absolute top-0 right-0 w-30" src="https://hi.momenkita.id/wp-content/uploads/2023/10/FLOWER-5-MK-Faza-Dimas.png" alt="bg">
+		<img class="absolute w-30 top-40 right-0 z-30" src="/img/decoration-1.webp" alt="decoration-1">
+		<img class="absolute w-30 top-0 right-0 z-10" src="/img/decoration-2.webp" alt="decoration-2">
+		<!-- <img class="absolute w-40 top-20 right-0 z-0" src="/img/decoration-3.webp" alt="decoration-3"> -->
+		<img class="absolute w-50 bottom-0 left-0 z-10" src="/img/decoration-4.webp" alt="decoration-4">
+		<img class="absolute w-40 bottom-0 left-0" src="/img/decoration-5.webp" alt="decoration-5">
 	</section>
-	<script src="./src/main.ts"></script>
+
+
+	<main>
+		<section class="bg-red-200 flex flex-col justify-between text-center h-120 pt-20 pb-10">
+			<div>
+				<p>The Wedding Of</p>
+				<h1 class="font-cursive text-4xl">Faisal & Annisa</h1>
+				<p>Minggu, 22 Juni 2025</p>
+			</div>
+			<div class="flex justify-center gap-6">
+				<div class="flex flex-col justify-center items-center">
+					<span id="countdown-days" class="text-3xl">00</span>
+					<span>Hari</span>
+				</div>
+				<div class="flex flex-col justify-center items-center">
+					<span id="countdown-hours" class="text-3xl">00</span>
+					<span>Jam</span>
+				</div>
+				<div class="flex flex-col justify-center items-center">
+					<span id="countdown-minutes" class="text-3xl">00</span>
+					<span>Menit</span>
+				</div>
+				<div class="flex flex-col justify-center items-center">
+					<span id="countdown-seconds" class="text-3xl">00</span>
+					<span>Detik</span>
+				</div>
+			</div>		
+		</section>
+		<section class="bg-[url(/img/background-2.webp)] bg-cover bg-no-repeat bg-center h-80">
+			<div class="text-center py-10 text-white text-shadow-lg">
+				<p>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</p>
+				<p>Q.S. Ar- Rum : 21</p>
+			</div>
+		</section>
+	</main>
+	<script src="./src/main.ts" type="module"></script>
 </body>
 </html>
